@@ -7,8 +7,8 @@ spriteSheet.src = './images/animations/drinking-customer-spritesheet.png';
 const spriteWidth = 100; // Width of each frame
 const spriteHeight = 90; // Height of each frame
 const framesPerRow = 2; // Number of frames per row
-const customerWidth = 160;
-const customerHeight = 140;
+const customerWidth = 60;
+const customerHeight = 40;
 
 let currentFrame = 0; // Current frame to draw
 let frameDelay = 0; // Delay counter for animation speed
@@ -18,7 +18,7 @@ let playAnimation = false; // Controls whether the animation should play
 let nextPlayDelay = 0; // Random delay before the animation plays again
 
 // Function to draw a single frame (for fallback or during animation)
-function drawFrame(ctx, canvas, frameIndex, alpha = 0.5) {
+function drawFrame(ctx, canvas, frameIndex, alpha = 0.4) {
     const col = frameIndex % framesPerRow;
     const row = Math.floor(frameIndex / framesPerRow);
   
@@ -29,8 +29,8 @@ function drawFrame(ctx, canvas, frameIndex, alpha = 0.5) {
     ctx.globalAlpha = alpha;
   
     // Draw the frame to the canvas
-    const dx = (canvas.width - spriteWidth) * 0.9;
-    const dy = (canvas.height - spriteHeight) * 0.47;
+    const dx = (canvas.width - spriteWidth) * 1.1;
+    const dy = (canvas.height - spriteHeight) * 0.91;
     ctx.drawImage(spriteSheet, sx, sy, spriteWidth, spriteHeight, dx, dy, customerWidth, customerHeight);
   
     // Reset transparency to default for other operations

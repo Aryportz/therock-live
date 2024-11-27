@@ -1,7 +1,7 @@
 export { animateBall };
 
 // Ball Animation Settings
-let ballRadius = 7; // Initial radius of the ball
+let ballRadius = 15; // Initial radius of the ball
 let growing = true; // Tracks whether the ball is growing or shrinking
 
 // Ball animation function
@@ -18,10 +18,10 @@ function animateBall(ctx, canvas) {
   // Update the ball's radius
   if (growing) {
     ballRadius += 0.1; // Increase radius
-    if (ballRadius >= 8) growing = false; // Reverse when it reaches max size
+    if (ballRadius >= 18) growing = false; // Reverse when it reaches max size
   } else {
     ballRadius -= 0.2; // Decrease radius
-    if (ballRadius <= 5) growing = true; // Reverse when it reaches min size
+    if (ballRadius <= 15) growing = true; // Reverse when it reaches min size
   }
 
   // Request the next animation frame

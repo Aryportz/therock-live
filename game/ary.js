@@ -7,9 +7,9 @@ const blinkImage = new Image();
 blinkImage.src = './images/animations/eye-blink.png';
 
 let blinkVisible = false; // Tracks whether the blink is currently visible
-const blinkDuration = 100; // Duration of the blink (in ms)
-const blinkIntervalMin = 2000; // Minimum time between blinks (in ms)
-const blinkIntervalMax = 8000; // Maximum time between blinks (in ms);
+const blinkDuration = 1000; // Duration of the blink (in ms)
+const blinkIntervalMin = 500; // Minimum time between blinks (in ms)
+const blinkIntervalMax = 600; // Maximum time between blinks (in ms);
 
 /**
  * Draws the Ary image on the canvas with scaling and positioning options.

@@ -21,6 +21,6 @@ const blinkctx = blinkcanvas.getContext('2d');
 window.addEventListener('load', () => DrawCustomers(doorctx, doorcanvas));
 window.addEventListener('load', () => animateBall(ballctx, ballcanvas));
 window.addEventListener('load', snowFlake);
-window.addEventListener('load', drawAry(aryctx, arycanvas, -55, 28, 0.3)); 
-window.addEventListener('load', () => startBlink(blinkctx, blinkcanvas, -50.6, 0.46, 0.27));
+window.addEventListener('load', drawAry(aryctx, arycanvas, -55, 28, 0.3));
+window.addEventListener('load', () => startBlink(blinkctx, blinkcanvas, -201, 4.8, 1.2));
 
